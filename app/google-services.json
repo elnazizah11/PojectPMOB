@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "316737987103",
+    "firebase_url": "https://tiketgbk-c4e58-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "tiketgbk-c4e58",
+    "storage_bucket": "tiketgbk-c4e58.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:316737987103:android:9543c6d3ff0123f6872b2a",
+        "android_client_info": {
+          "package_name": "com.pmob.tiketgbk"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA3v695jP59xFcPsbxeoIpjK85g13t2gcs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:layout_marginBottom="8dp"
+    android:background="@drawable/card_background">
+
+    <TextView
+        android:id="@+id/matchTitleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Match Title"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/matchDateText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Match Date"/>
+
+    <TextView
+        android:id="@+id/matchTimeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Match Time"/>
+
+    <TextView
+        android:id="@+id/tribunText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tribun"/>
+
+    <TextView
+        android:id="@+id/quantityText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quantity"/>
+
+    <TextView
+        android:id="@+id/totalPriceText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Price"/>
+
+    <TextView
+        android:id="@+id/paymentMethodText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Payment Method"/>
+</LinearLayout>

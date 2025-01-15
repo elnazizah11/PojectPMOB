@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    android:background="#F5F5F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <!-- CardView for the Order Summary -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            app:cardElevation="4dp"
+            android:radius="8dp"
+            app:cardBackgroundColor="#FFFFFF"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Title -->
+                <TextView
+                    android:id="@+id/orderSummaryTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Detail Pesanan"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textColor="#303F9F"
+                    android:paddingBottom="16dp" />
+
+                <!-- Match Title -->
+                <TextView
+                    android:id="@+id/matchTitleText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Pertandingan: Persijap vs Persela"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:paddingBottom="8dp"
+                    android:textColor="#3F51B5" />
+
+                <!-- Match Date and Time -->
+                <TextView
+                    android:id="@+id/matchDateText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tanggal: 10 Jan 2025"
+                    android:paddingBottom="4dp"
+                    android:textColor="#757575" />
+
+                <TextView
+                    android:id="@+id/matchTimeText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Waktu: 15:30"
+                    android:paddingBottom="16dp"
+                    android:textColor="#757575" />
+
+                <!-- User Details -->
+                <TextView
+                    android:id="@+id/userNameText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nama: John Doe"
+                    android:paddingBottom="4dp"
+                    android:textColor="#212121" />
+
+                <TextView
+                    android:id="@+id/userEmailText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Email: john.doe@example.com"
+                    android:paddingBottom="4dp"
+                    android:textColor="#212121" />
+
+                <TextView
+                    android:id="@+id/userPhoneText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Telepon: 08123456789"
+                    android:paddingBottom="16dp"
+                    android:textColor="#212121" />
+
+                <!-- Tribun and Quantity -->
+                <TextView
+                    android:id="@+id/tribunText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tribun: VIP (Rp.1.000.000)"
+                    android:paddingBottom="4dp"
+                    android:textColor="#212121" />
+
+                <TextView
+                    android:id="@+id/quantityText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Jumlah Tiket: 2"
+                    android:textColor="#212121" />
+
+                <TextView
+                    android:id="@+id/totalPriceText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Total Harga: Rp.0"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="#E91E63"
+                    android:paddingTop="16dp"
+                    android:paddingBottom="16dp" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Payment Options CardView -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="4dp"
+            android:radius="8dp"
+            app:cardBackgroundColor="#FFFFFF"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Payment Options Title -->
+                <TextView
+                    android:id="@+id/paymentOptionsTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Pilih Metode Pembayaran"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:paddingBottom="8dp"
+                    android:textColor="#3F51B5" />
+
+                <RadioGroup
+                    android:id="@+id/paymentOptionsGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/paymentGopay"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="GoPay"
+                        android:textColor="#212121"
+                        android:paddingStart="8dp"
+                        android:paddingEnd="8dp" />
+
+                    <RadioButton
+                        android:id="@+id/paymentOvo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="OVO"
+                        android:textColor="#212121"
+                        android:paddingStart="8dp"
+                        android:paddingEnd="8dp" />
+
+                    <RadioButton
+                        android:id="@+id/paymentDana"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="DANA"
+                        android:textColor="#212121"
+                        android:paddingStart="8dp"
+                        android:paddingEnd="8dp" />
+
+                    <RadioButton
+                        android:id="@+id/paymentBankTransfer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Transfer Bank"
+                        android:textColor="#212121"
+                        android:paddingStart="8dp"
+                        android:paddingEnd="8dp" />
+
+                    <RadioButton
+                        android:id="@+id/paymentQris"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="QRIS"
+                        android:textColor="#212121"
+                        android:paddingStart="8dp"
+                        android:paddingEnd="8dp" />
+                </RadioGroup>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Confirm Button -->
+        <Button
+            android:id="@+id/confirmOrderButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Simpan Pesanan"
+            android:layout_marginTop="16dp"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+</ScrollView>
